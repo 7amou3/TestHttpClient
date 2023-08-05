@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testhttpclient:
+    image: ${DOCKER_REGISTRY-}testhttpclient
+    build:
+      context: .
+      dockerfile: TestHttpClient/Dockerfile
